@@ -15,6 +15,7 @@
 		EE6069BD1C4500E000CCAB64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6069BB1C4500E000CCAB64 /* LaunchScreen.storyboard */; };
 		EE6069C81C4500E100CCAB64 /* _______ARC__ARC_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6069C71C4500E100CCAB64 /* _______ARC__ARC_Tests.m */; };
 		EE6069D31C4500E100CCAB64 /* _______ARC__ARC_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6069D21C4500E100CCAB64 /* _______ARC__ARC_UITests.m */; };
+		EE6069E21C45010700CCAB64 /* Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6069E11C45010700CCAB64 /* Demo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		EE6069CE1C4500E100CCAB64 /* 单例模式整合（ARC与非ARC）UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "单例模式整合（ARC与非ARC）UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6069D21C4500E100CCAB64 /* _______ARC__ARC_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_______ARC__ARC_UITests.m"; sourceTree = "<group>"; };
 		EE6069D41C4500E100CCAB64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE6069E01C45010700CCAB64 /* Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo.h; sourceTree = "<group>"; };
+		EE6069E11C45010700CCAB64 /* Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo.m; sourceTree = "<group>"; };
+		EE6069E31C45011E00CCAB64 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,9 @@
 				EE6069B11C4500E000CCAB64 /* AppDelegate.m */,
 				EE6069B31C4500E000CCAB64 /* ViewController.h */,
 				EE6069B41C4500E000CCAB64 /* ViewController.m */,
+				EE6069E01C45010700CCAB64 /* Demo.h */,
+				EE6069E11C45010700CCAB64 /* Demo.m */,
+				EE6069E31C45011E00CCAB64 /* Singleton.h */,
 				EE6069B61C4500E000CCAB64 /* Main.storyboard */,
 				EE6069B91C4500E000CCAB64 /* Assets.xcassets */,
 				EE6069BB1C4500E000CCAB64 /* LaunchScreen.storyboard */,
@@ -275,6 +282,7 @@
 			files = (
 				EE6069B51C4500E000CCAB64 /* ViewController.m in Sources */,
 				EE6069B21C4500E000CCAB64 /* AppDelegate.m in Sources */,
+				EE6069E21C45010700CCAB64 /* Demo.m in Sources */,
 				EE6069AF1C4500E000CCAB64 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = "单例模式整合（ARC与非ARC）/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "keqiushuai.com.-------ARC--ARC-";
@@ -425,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = "单例模式整合（ARC与非ARC）/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "keqiushuai.com.-------ARC--ARC-";
